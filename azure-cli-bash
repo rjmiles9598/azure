@@ -1,0 +1,21 @@
+az login
+
+to use the Azure Cloud shell 
+>az
+
+To create a new Azure virtual machin
+az vm create -n MyVm -g MyResourceGroup --image Ubuntu2204
+
+
+To create a resource group
+az login
+look at regions
+az account list-locations -o table
+create resource group
+az group create --name rg-west --loaction westus2
+
+to delete a resource
+az group delete -n rg-west
+
+
+vms scratch pad to configure nginx to listen for incoming traffic on port 80 and set port 3000 as the proxy
